@@ -492,6 +492,7 @@ sprites.onCreated(SpriteKind.bird, function (sprite) {
 })
 let dragonVisible = 0
 let dragon: Sprite = null
+info.setScore(0)
 game.splash("Try to not get spotted", "by the cyclist")
 scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -791,7 +792,6 @@ let bike = sprites.create(img`
 bike.setPosition(36, 98)
 let bikeAlert = 0
 dragonVisible = 0
-info.setScore(0)
 let waitTime = 500
 forever(function () {
     if (bikeAlert <= 7) {
